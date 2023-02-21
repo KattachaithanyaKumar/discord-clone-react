@@ -1,0 +1,104 @@
+.register {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.register-container {
+  width: 60%;
+  /* height: 60vh; */
+  background-color: var(--grey);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 30px;
+  border-radius: 24px;
+  color: white;
+  box-shadow: 0px 0px 32px var(--dark);
+}
+
+.reg-left {
+  width: 100%;
+  background: url("../../assets/background2.png") center;
+  background-size: cover;
+  box-shadow: 0px 0px 16px var(--black);
+  border-radius: 24px;
+}
+
+.reg-right form {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+}
+
+.reg-right form input {
+  padding: 14px;
+  font-size: 14px;
+  background-color: var(--grey);
+  outline: none;
+  border: none;
+  border-bottom: 1px solid var(--black);
+  margin: 20px 10px;
+  color: white;
+}
+
+.reg-right form button {
+  background-color: var(--black);
+  outline: none;
+  border: none;
+  padding: 10px;
+  color: white;
+  margin: 30px;
+  cursor: pointer;
+}
+
+.reg-right form button:hover,
+.reg-right pre button:hover {
+  background-color: var(--hover);
+}
+
+.reg-right pre button {
+  margin-left: 10px;
+  padding: 10px;
+  background-color: var(--black);
+  outline: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 913px) {
+  .register-container {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .register-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media only screen and (max-width: 426px) {
+  .register-container {
+    width: 90%;
+    grid-template-columns: 1fr;
+    border-radius: 0px;
+    padding: 30px;
+  }
+
+  .reg-right pre {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .reg-right pre button {
+    width: 50%;
+    margin: 0px;
+  }
+
+  .reg-right form input {
+    margin: 0px;
+  }
+}
