@@ -11,8 +11,8 @@ const App = () => {
   return (
     <div className="app">
       <Background />
-      {/* <Login />
-      <Register /> */}
+      <Login />
+      <Register />
       <Home />
     </div>
   );

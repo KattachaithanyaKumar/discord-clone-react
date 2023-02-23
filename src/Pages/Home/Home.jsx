@@ -26,10 +26,13 @@ const Home = () => {
         </div>
         <div className="home-right">
           <div className="chat">
-            <div className="chat-left">
+            <form className="chat-left">
               <h2>@ User</h2>
-              <p>test</p>
-            </div>
+              <div className="chat-box">
+                <p>test</p>
+              </div>
+              <input type="text" placeholder="Type a message" />
+            </form>
             {toggle && <div className="chat-right"></div>}
           </div>
         </div>

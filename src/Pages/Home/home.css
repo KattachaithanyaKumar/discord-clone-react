@@ -39,11 +39,26 @@
 .chat-left {
   flex: 3;
   color: white;
+  display: flex;
+  flex-direction: column;
 }
 
 .chat-left h2 {
-  padding: 14px;
+  flex: 1;
   border-bottom: 1px solid var(--dark);
+}
+
+.chat-box {
+  flex: 10;
+}
+
+.chat-left input {
+  text-indent: 16px;
+  flex: 1;
+  background-color: var(--black);
+  outline: none;
+  border: none;
+  color: white;
 }
 
 .chat-right {
