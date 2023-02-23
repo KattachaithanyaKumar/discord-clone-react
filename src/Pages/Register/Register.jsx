@@ -4,20 +4,22 @@ import "./register.css";
 const Register = () => {
   return (
     <div className="register">
-      <div className="register-container">
-        <div className="reg-left"></div>
-        <div className="reg-right">
+      <div className="reg-box">
+        <div className="reg-left">
           <form>
             <h1>Register</h1>
-            <input type="email" placeholder="Email" />
             <input type="text" placeholder="user name" />
+            <input type="email" placeholder="email" />
             <input type="password" placeholder="password" />
-            <input type="password" placeholder="re-enter password" />
+            <input type="file" />
             <button>Register</button>
           </form>
-          <pre>
-            Already have an account? <button>Login</button>
-          </pre>
+        </div>
+        <div className="reg-right">
+          <h1>Discord Lite</h1>
+          <span>
+            Already have an account? <button>Login in</button>
+          </span>
         </div>
       </div>
     </div>

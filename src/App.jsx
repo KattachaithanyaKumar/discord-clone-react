@@ -13,7 +13,7 @@ const App = () => {
       <Background />
       <Login />
       <Register />
-      <Home />
+      {/* <Home /> */}
     </div>
   );
 };
