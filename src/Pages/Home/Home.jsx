@@ -1,27 +1,34 @@
 import React, { useState } from "react";
 import "./home.css";
 
+import {BsFillMoonFill} from "react-icons/bs"
+import {BsFillSunFill} from "react-icons/bs"
+
 const Home = () => {
   const [toggle, setToggle] = useState(false);
   const [theme, setTheme] = useState("dark");
+
+  const themeSwap = () => {
+    if (theme === "dark") {
+      setTheme("light");
+    } else {
+      setTheme("dark");
+    }
+  }
+
   return (
     <div className="home">
       <div className="home-container" id={theme}>
         <div className="home-left">
           <div className="chat-list">
-            <div className="profile">
-              <p>user</p>
-              <button
-                onClick={() => {
+            <div className="profile" onClick={() => {
                   setToggle(!toggle);
-                }}
-              >
-                click me
-              </button>
+                }}>
+              <p>user</p>
             </div>
           </div>
           <div className="theme">
-            <button>theme switch</button>
+            {theme === "dark" ? <BsFillMoonFill onClick={themeSwap}/> : <BsFillSunFill onClick={themeSwap}/>}
           </div>
         </div>
         <div className="home-right">
