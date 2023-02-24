@@ -12,8 +12,8 @@ const App = () => {
     <div className="app">
       <Background />
       {/* <Login /> */}
-      {/* <Register /> */}
-      <Home />
+      <Register />
+      {/* <Home /> */}
     </div>
   );
 };

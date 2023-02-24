@@ -4,7 +4,7 @@ import "./background.css";
 const Background = () => {
   return (
     <div>
-      <ul class="background">
+      <ul className="background">
         <li></li>
         <li></li>
         <li></li>
