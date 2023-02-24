@@ -7,7 +7,7 @@
 }
 
 .reg-box {
-  width: 60%;
+  width: 50%;
   background-color: var(--grey);
   display: flex;
   border-radius: 24px;
@@ -68,5 +68,15 @@
 }
 
 .reg-right > span > button {
-  padding: 4px;
+  padding: 8px;
+  background-color: var(--black);
+  outline: none;
+  border: none;
+  cursor: pointer;
+  color: white;
+  box-shadow: 0px 0px 12px var(--dark);
+}
+
+.reg-right > span > button:hover {
+  background-color: var(--hover);
 }

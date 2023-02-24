@@ -18,7 +18,7 @@ const Register = () => {
         <div className="reg-right">
           <h1>Discord Lite</h1>
           <span>
-            Already have an account? <button>Login in</button>
+            Already have an account? <button>Login</button>
           </span>
         </div>
       </div>

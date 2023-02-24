@@ -7,7 +7,7 @@
 }
 
 .login-box {
-  width: 60%;
+  width: 50%;
   /* height: 60vh; */
   background-color: var(--grey);
   display: flex;
@@ -65,5 +65,19 @@
 }
 
 .login-right > form > button:hover {
+  background-color: var(--hover);
+}
+
+.login-left > span > button {
+  padding: 8px;
+  background-color: var(--black);
+  outline: none;
+  border: none;
+  cursor: pointer;
+  color: white;
+  box-shadow: 0px 0px 12px var(--dark);
+}
+
+.login-left > span > button:hover {
   background-color: var(--hover);
 }
